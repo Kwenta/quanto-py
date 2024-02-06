@@ -1,5 +1,39 @@
 import random as rd
 
+## Independent Variables (i.e. configurable)
+
+# V_max
+open_interest_cap = rd.randint(1, 100)
+
+# λ_max
+maximum_initial_leverage = rd.randint(1, 100)
+
+# skew_scale
+skew_scaling_denominator_constant = rd.randint(1, 100)
+
+# ϕt
+taker_fee = rd.randint(1, 100)
+
+# ϕm
+maker_fee = rd.randint(1, 100)
+
+# W_max
+max_funding_skew_threshold = rd.randint(1, 100)
+
+# i_max
+max_funding_rate = rd.randint(1, 100)
+
+# r_buffer
+liquidation_buffer_ratio = rd.randint(1, 100)
+
+# r_fee
+liquidation_fee_ratio = rd.randint(1, 100)
+
+# D (this is a reused variable)
+minimal_keeper_incentive = rd.randint(1, 100)
+
+## Dependent Variables (i.e. calculated)
+
 # b
 base_asset = rd.randint(1, 100)
 
@@ -36,17 +70,8 @@ set_of_all_short_positions_in_the_market = []
 # Q
 market_size = rd.randint(1, 100)
 
-# V_max
-open_interest_cap = rd.randint(1, 100)
-
 # K
 market_skew = rd.randint(1, 100)
-
-# λ_max
-maximum_initial_leverage = rd.randint(1, 100)
-
-# skew_scale
-skew_scaling_denominator_constant = rd.randint(1, 100)
 
 # λ
 leverage = rd.randint(1, 100)
@@ -60,20 +85,8 @@ initial_margin = rd.randint(1, 100)
 # m
 remaining_margin = rd.randint(1, 100)
 
-# ϕt
-taker_fee = rd.randint(1, 100)
-
-# ϕm
-maker_fee = rd.randint(1, 100)
-
 # W
 proportional_skew = rd.randint(1, 100)
-
-# W_max
-max_funding_skew_threshold = rd.randint(1, 100)
-
-# i_max
-max_funding_rate = rd.randint(1, 100)
 
 # i
 instantaneous_funding_rate = rd.randint(1, 100)
@@ -107,15 +120,6 @@ market_debt = rd.randint(1, 100)
 
 # liq_margin
 liquidation_margin = rd.randint(1, 100)
-
-# r_buffer
-liquidation_buffer_ratio = rd.randint(1, 100)
-
-# r_fee
-liquidation_fee_ratio = rd.randint(1, 100)
-
-# D (this is a reused variable)
-minimal_keeper_incentive = rd.randint(1, 100)
 
 # p_liq_approx
 approximate_liquidation_price = rd.randint(1, 100)
